@@ -1,0 +1,8 @@
+<h3 class="border-bottom p-3 mb-4">Add a new restaurant</h3>
+<%= simple_form_for(@restaurant) do |f| %>
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :category %>
+  <%= f.input :phone_number %>
+  <%= f.button :submit, class: "btn btn-primary" %>
+<% end %>
